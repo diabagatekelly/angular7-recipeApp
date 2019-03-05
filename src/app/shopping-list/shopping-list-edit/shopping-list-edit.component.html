@@ -1,3 +1,23 @@
-<p>
-  Edit your shopping list
-</p>
+<form>
+  <div class="row">
+      <div class="col-sm-5 form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Ingredient Name">
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="amount">Amount</label>
+        <input type="number" class="form-control" id="amount" placeholder="Amount">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <button type="submit" class="btn btn-success">Add</button>
+    </div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+    <div class="col-sm-1">
+        <button type="button" class="btn btn-primary">Clear</button>
+    </div>
+  </div>
+</form>
