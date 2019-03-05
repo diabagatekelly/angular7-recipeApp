@@ -1,1 +1,39 @@
-<p>recipe-list-detail works!</p>
+<div class="row" *ngFor="let recipe of recipes; let i = index">
+    <div class="colum">
+        <div class="row" >
+             <div class="col-xs-12">
+                <img src= "{{ recipes[i].imagePath }}" alt="recipes.name" class="img-responsive" style="max-height: 100px;">
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="col-xs-12" >
+                {{ recipes[i].name }}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Manage <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Add to Shopping List</a>
+                    <a class="dropdown-item" href="#">Edit Recipe</a>
+                    <a class="dropdown-item" href="#">Delete Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-xs-12">
+                {{ recipes[i].description }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Ingredient list</p>
+            </div>
+        </div>
+</div>
+
